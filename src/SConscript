@@ -1,0 +1,2 @@
+SConscript('bin/SConscript')
+SConscript('lib/SConscript')

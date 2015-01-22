@@ -1,0 +1,12 @@
+Import('qtEnv')
+env = qtEnv.Clone()
+
+env.EnableQt5Modules(['QtWidgets'])
+
+env.Append(CPPPATH = '#/src/lib')
+env.Append(LIBPATH = '#/gen/lib')
+env.Append(LIBS = ['gui'])
+
+prog = env.Program('testwindow', Glob('*.cpp'))
+env.Install('#inst/bin', prog)
+

@@ -1,0 +1,7 @@
+Import('qtEnv')
+env = qtEnv.Clone()
+
+env.EnableQt5Modules(['QtWidgets'])
+
+env.Library('gui', Glob('*.cpp')+Glob('*.qrc'))
+
