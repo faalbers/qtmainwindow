@@ -1,7 +1,8 @@
 import os
 
 # Set your qt5 path
-qt5dir = '/home/afrank/QT521/5.2.1/gcc_64'
+#qt5dir = '/home/afrank/QT521/5.2.1/gcc_64'
+qt5dir = '/home/frank/Qt/5.3/gcc_64'
 
 # Create base environment
 baseEnv = Environment()
